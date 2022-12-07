@@ -27,7 +27,7 @@ namespace CSharp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Console.WriteLine("Welcome");
         }
     }
 }

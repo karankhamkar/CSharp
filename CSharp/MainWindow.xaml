@@ -10,7 +10,7 @@
         <Button FontWeight="Bold" Content="I'm a Button" Click="Button_Click" RenderTransformOrigin="0.531,-0.223" Margin="-264,-143,264,143" ></Button>
         <Button Content="Button" HorizontalAlignment="Left" Height="0" Margin="-87,130,0,0" VerticalAlignment="Top"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="-144,0,0,66" Height="39" VerticalAlignment="Bottom" RenderTransformOrigin="2.305,-0.861"/>
-        <TextBox FontWeight="Bold" MaxHeight="100" Width="150"  Text="Welcome to the Family&#xD;&#xA;"  />
+       
         
     </Grid>
 </Window>
