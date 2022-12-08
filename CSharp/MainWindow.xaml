@@ -6,11 +6,43 @@
         xmlns:local="clr-namespace:CSharp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Height="100" Width="160">
-        <Button FontWeight="Bold" Content="I'm a Button" Click="Button_Click" RenderTransformOrigin="0.531,-0.223" Margin="-264,-143,264,143" ></Button>
+    <Grid Height="100" Width="160" RenderTransformOrigin="-0.554,0.93">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="54*"/>
+            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="55*"/>
+            <ColumnDefinition Width="10*"/>
+        </Grid.ColumnDefinitions>
+        <Label RenderTransformOrigin="-1.567,0.462" FontWeight="Bold" Margin="-280,55,174,-55" />
+        <Label Content="Welcome to B2A Family" FontSize="22" FontWeight="Bold" Margin="-90,-145,-30,0" VerticalAlignment="Top" Height="40" RenderTransformOrigin="0.528,1.688" Grid.ColumnSpan="6"/>
+        <TextBox Name="textBox1"  Margin="-90,-85,-18,0" TextWrapping="Wrap"  Text=" " VerticalAlignment="Top" Height="25" Grid.ColumnSpan="6">
+            <TextBox.CaretBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFBBB4B4" Offset="1"/>
+                    <GradientStop Color="#FF4B4848" Offset="0.628"/>
+                    <GradientStop Color="#FF464343" Offset="0.306"/>
+                    <GradientStop Color="#FF4A4747" Offset="0.448"/>
+                    <GradientStop Color="#FF3D3A3A" Offset="0.243"/>
+                </LinearGradientBrush>
+            </TextBox.CaretBrush>
+
+        </TextBox>
+        <ListBox  Margin="-280,5,0,-85" Name="listBox1" Width="260" HorizontalAlignment="Left" />
+        <Button Click="Button1_Click" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Margin="-280,-32,0,0" VerticalAlignment="Top" Width="87" FontFamily="Calisto MT" RenderTransformOrigin="0.298,0.573">Add Item</Button>
+        <Button Click="Button2_Click" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Margin="-106,-32,0,0" Background="#FFC3BEBF" VerticalAlignment="Top" RenderTransformOrigin="0.336,-0.214" Width="87" FontFamily="Calisto MT">Delet</Button>
+        <Button Click="Button3_Click" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Margin="50,-32,0,0" VerticalAlignment="Top" Background="#FFC3BEBF" Grid.ColumnSpan="5" FontFamily="Calisto MT" Width="87" RenderTransformOrigin="0.337,-1.315">Restore</Button>
+        <Button Click="Button4_Click" FontSize="15" FontWeight="Bold" Background="#FFC3BEBF" FontFamily="Calisto MT" Width="87" Grid.Column="5" Margin="73,-32,-150,0" VerticalAlignment="Top">Flush</Button>
+        <ListBox Margin="50,5,-150,-85"  Name="listBox2" Grid.ColumnSpan="6" />
+        <Label  Content="Enter Your Name" FontSize="18" HorizontalAlignment="Left" Margin="-280,-89,0,0" VerticalAlignment="Top" FontFamily="Calisto MT" FontWeight="Bold" Width="160"/>
+
+
+
+        <!--<Button FontWeight="Bold" Content="I'm a Button" Click="Button_Click" RenderTransformOrigin="0.531,-0.223" Margin="-264,-143,264,143" ></Button>
         <Button Content="Button" HorizontalAlignment="Left" Height="0" Margin="-87,130,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="-144,0,0,66" Height="39" VerticalAlignment="Bottom" RenderTransformOrigin="2.305,-0.861"/>
-       
-        
+        <Button Content="Button" HorizontalAlignment="Left" Margin="-144,0,0,66" Height="39" VerticalAlignment="Bottom" RenderTransformOrigin="2.305,-0.861"/>-->
+
     </Grid>
 </Window>
